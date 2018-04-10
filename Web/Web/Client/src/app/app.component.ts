@@ -14,8 +14,9 @@ export class AppComponent {
 
   }
 
+  //https://oleg-sample-web.azurewebsites.net/api/values
   ngOnInit() {
-    this.http.get('https://oleg-sample-web.azurewebsites.net/api/values').subscribe(
+    this.http.get('http://localhost:62932/api/values').subscribe(
       response => {
         this.data = response.json();
       }
